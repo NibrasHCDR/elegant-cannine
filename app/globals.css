@@ -1,27 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Cardo&family=EB+Garamond&family=Orelega+One&family=Roboto+Slab:wght@300&family=Rubik:wght@500&family=Saira+Condensed:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cardo&family=EB+Garamond&family=Orelega+One&family=Philosopher:wght@700&family=Roboto+Slab:wght@300&family=Rubik:wght@500&family=Saira+Condensed:wght@300&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+.bg-img{
+  background-image: url('https://i.postimg.cc/W3K894tT/findo-1.png');
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+.bg-img2{
+  background-image: url('https://i.postimg.cc/d3zNgJsc/pets-huellas.png');
+}
+
+
+
+     /* DISEÑO CSS GRID DESIGN*/
+
+/* Contenedor Portada */
+.grid-portada-container{
+  display: grid;
+  grid-gap: 1rem;
+  grid-template:
+  "port1" auto
+  "port4" auto;
+  grid-template-rows: 0.5fr 1fr 0.5fr;
+}
+/* Portada para móviles (320px a 425px) */
+@media screen and (min-width: 0px) and (max-width: 425px) {
+  .grid-portada-container {
+    /* Portada específicos para móviles */
+    display: grid;
+    grid-gap: 1rem;
+    grid-template:
+    "port1" auto
+    "port4" auto; 
+    grid-template-rows: 2fr 2.5fr;
   }
 }
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+/* Diseño para tabletas (426px a 768px) */
+@media screen and (min-width: 426px) and (max-width: 768px) {
+  .grid-portada-container {
+    /* Portada específicos para tabletas */
+      grid-template:
+      "port1 port4" auto
+      "port1 port4" auto
+      "port1 port4" auto;
+      grid-template-columns: 2fr 2.5fr;
+  }
 }
+/* Portada para escritorio (769px en adelante) */
+@media screen and (min-width: 769px) {
+  .grid-portada-container {
+    /* Portada específicos para escritorio */
+      grid-template:
+      "port1 port4" auto
+      "port1 port4" auto
+      "port1 port4" auto;
+      grid-template-columns: 2fr 2.5fr;
+  }
+}
+/* Portada Div 1*/
+.portada-1{
+  grid-area: port1;
+}
+/* Portada Div 4*/
+.portada-4{
+  grid-area: port4; 
+}
+
+      /* GRID CSS DESIGN PRESENTACION*/
+
+/* Contenedor Presentacion */
+.grid-Presentacion-container{
+  display: grid;
+  grid-gap: 1rem;
+  grid-template:
+  "port1" auto
+  "port4" auto;
+  grid-template-rows: 0.5fr 1fr 0.5fr;
+}
+/* Presentacion para móviles (320px a 425px) */
+@media screen and (min-width: 0px) and (max-width: 425px) {
+  .grid-Presentacion-container {
+    /* Presentacion específicos para móviles */
+    display: grid;
+    grid-gap: 1rem;
+    grid-template:
+    "pre1" auto
+    "pre2" auto
+    "pre3" auto
+    "pre2" auto;
+    grid-template-rows: 2fr 2.5fr;
+  }
+}
+/* Diseño para tabletas (426px a 768px) */
+@media screen and (min-width: 426px) and (max-width: 768px) {
+  .grid-Presentacion-container {
+    /* Presentacion específicos para tabletas */
+      grid-template:
+      "pre1 pre1 pre1" auto
+      "pre2 pre3 pre4" auto;
+
+  }
+}
+/* Presentacion para escritorio (769px en adelante) */
+@media screen and (min-width: 769px) {
+  .grid-Presentacion-container {
+    /* Presentacion específicos para escritorio */
+    grid-gap: 0.5rem;
+      grid-template:
+      "pre1 pre1 pre1" auto
+      "pre2 pre3 pre4" auto;
+      grid-template-rows: 0.5fr 0.5fr 0.5fr;
+  }
+}
+/* Portada Div 1*/
+.Presentacion-1{
+  grid-area: pre1;
+}
+/* Portada Div 2*/
+.Presentacion-2{
+  grid-area: pre2;
+}
+/* Portada Div 3*/
+.Presentacion-3{
+  grid-area: pre3;
+}
+/* Portada Div 4*/
+.Presentacion-4{
+  grid-area: pre4; 
+}
+
+
+      /* GRID CSS DESIGN SECCION3*/
+
+/* Contenedor SECCION3 */
+.grid-Seccion3-container{
+  display: grid;
+  grid-gap: 1rem;
+  grid-template:
+  "port1" auto
+  "port4" auto;
+  grid-template-rows: 0.5fr 1fr 0.5fr;
+}
+/* SECCION3 para móviles (320px a 425px) */
+@media screen and (min-width: 0px) and (max-width: 425px) {
+  .grid-Seccion3-container {
+    /* Seccion3 específicos para móviles */
+    display: grid;
+    grid-gap: 1rem;
+    grid-template:
+    "pre1" auto
+    "pre2" auto
+    "pre3" auto
+    "pre2" auto;
+    grid-template-rows: 2fr 2.5fr;
+  }
+}
+/* Diseño para tabletas (426px a 768px) */
+@media screen and (min-width: 426px) and (max-width: 768px) {
+  .grid-Seccion3-container {
+    /* Seccion3 específicos para tabletas */
+      grid-template:
+      "pre1 pre1 pre1" auto
+      "pre2 pre3 pre4" auto;
+
+  }
+}
+/* Seccion3 para escritorio (769px en adelante) */
+@media screen and (min-width: 769px) {
+  .grid-Seccion3-container {
+    /* Seccion3 específicos para escritorio */
+    grid-gap: 1.5rem;
+      grid-template:
+      "sec1 sec1 sec1" auto
+      "sec2 sec2 sec2" auto
+      "sec3 sec4 sec5" auto;
+      grid-template-rows: 1fr 1.2fr 1fr;
+      grid-template-columns: 1fr 1.6fr 1fr;
+  }
+}
+/* Seccion3 Div 1*/
+.Seccion3-1{
+  grid-area: sec1;
+}
+/* Seccion3 Div 2*/
+.Seccion3-2{
+  grid-area: sec2;
+}
+/* Seccion3 Div 3*/
+.Seccion3-3{
+  grid-area: sec3;
+}
+/* Seccion3 Div 4*/
+.Seccion3-4{
+  grid-area: sec4; 
+}
+/* Seccion3 Div 5*/
+.Seccion3-5{
+  grid-area: sec5; 
+}
+
+
+       /* NUEVO METODO DE MAQUETACION GRID COLUMNAS Y SUPERPOSICION*/ 
+
+       /* GRID SECTION SECCION4*/
+
+  .grid-Seccion4-container{
+    display: grid;
+    /* repetimos 4 columnas de 1 fraccion*/
+    grid-template-columns: repeat(5,1fr);
+    /* repetimos 4 filas de 1 fraccion*/
+    grid-template-rows: repeat(5,1fr);
+
+  }
+
+  .Seccion4-1{
+    grid-column: 1/6;
+    grid-row: 1/2;
+  }
+
+  .Seccion4-2{
+    grid-column: 1/2;
+    grid-row: 2/4;
+  }
+
+  .Seccion4-3{
+    grid-column: 2/6;
+    grid-row: 2/3;
+  }
+
+  .Seccion4-5{
+    grid-column: 2/6;
+    grid-row: 3/5;
+    z-index: 2;
+  }
+
+  .Seccion4-4{
+    grid-column: 4/6;
+    grid-row: 1/6;
+     z-index: 3;
+  }
+
+         /* NUEVO METODO DE MAQUETACION GRID COLUMNAS Y SUPERPOSICION*/ 
+
+       /* GRID SECTION SECCION4*/
+
+       .grid-Seccion5-container{
+        display: grid;
+        /* repetimos 4 columnas de 1 fraccion*/
+        grid-template-columns: repeat(5,1fr);
+        /* repetimos 4 filas de 1 fraccion*/
+        grid-template-rows: repeat(6,1fr);
+    
+      }
+    
+      .Seccion5-1{
+        grid-column: 5/6;
+        grid-row: 2/4;
+      }
+    
+      .Seccion5-2{
+        grid-column: 5/6;
+        grid-row: 3/5;
+      }
+    
+      .Seccion5-3{
+        grid-column: 1/3;
+        grid-row: 1/3;
+
+      }
+    
+      .Seccion5-4{
+        grid-column: 2/4;
+        grid-row: 2/4;
+        z-index: 2;
+
+      }
+
+      .Seccion5-5{
+        grid-column: 3/5;
+        grid-row: 3/5;
+        z-index: 3;
+
+      }
