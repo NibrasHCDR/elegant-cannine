@@ -6,16 +6,19 @@ import Seccion3 from './components/Seccion3'
 import Seccion4 from './components/Seccion4'
 import Seccion5 from './components/Seccion5'
 import Footer from './components/Footer'
+import Header from './components/Header'
 
 export default function Home() {
   return (
       <>
+      <Header/>
       <Portada />
-      <Presentacion />
+      <Presentacion/>
       <Seccion3/>
       <Seccion4/>
       <Seccion5/>
       <Footer/>
+
       </>
   )
 }
