@@ -15,7 +15,7 @@ function Header({}: Props) {
 
 
   return (
-    <nav className="bg-[#F8D571]">
+    <nav className="bg-[#F8D571] transition-all ease-in-out duration-300">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="flex items-center justify-between h-16 no-select">
             <div className="flex items-center no-select">
@@ -25,7 +25,7 @@ function Header({}: Props) {
                 </Image>
               </div>
             </div>
-            <div className="hidden md:block">
+            <div className="hidden md:block transition-all ease-in-out duration-300">
               <div className="ml-4 flex items-center space-x-4">
                 <a href="/"
                 className="text-black hover:bg-[#34B1BF] hover:text-white rounded-lg p-2"
@@ -58,7 +58,7 @@ function Header({}: Props) {
               </div>
             </div>
 
-            <div className="md:hidden flex items-center">
+            <div className="md:hidden flex items-center transition-all ease-in-out duration-300">
               <button 
                className="inline-flex items-center justify-center p-2 rounded-md text-white md:text-white
               hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
@@ -93,7 +93,7 @@ function Header({}: Props) {
           </div>
         </div>
         {isClick && (
-          <div className="md:hidden">
+          <div className="md:hidden transition-all ease-in-out duration-300">
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
 
             <a href="/"
