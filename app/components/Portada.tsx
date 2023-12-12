@@ -8,7 +8,7 @@ type Props = {}
 
 function Portada({}: Props) {
   return (
-    <main className="w-screen h-screen xl:p-24 bg-img bg-cover bg-fixed">
+    <main className="w-full h-screen xl:p-24 bg-img bg-cover bg-fixed">
 
 <div className="w-full h-full">
 
