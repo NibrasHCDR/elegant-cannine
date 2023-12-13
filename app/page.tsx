@@ -11,13 +11,38 @@ import Header from './components/Header'
 export default function Home() {
   return (
       <>
-      <Header/>
+      <section className="" id="home">
+      <Header />
+      </section>
+
+      <section className="" id="portada">
       <Portada />
+      </section>
+
+      <section className="" id="presentacion">
       <Presentacion/>
+      </section>
+
+      <section className="" id="seccion3">
       <Seccion3/>
+      </section>
+
+      <section className="" id="seccion4">
       <Seccion4/>
+      </section>
+
+      <section className="" id="seccion5">
       <Seccion5/>
+      </section>
+
+      <section className="" id="footer">
       <Footer/>
+      </section>
+
+
+
+
+
 
       </>
   )

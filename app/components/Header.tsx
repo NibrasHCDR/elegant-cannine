@@ -13,6 +13,34 @@ function Header({}: Props) {
     setisClick(!isClick)
   }
 
+  const handleButtonClickHome = () => {
+    const membershipsSection = document.getElementById('home');
+    if (membershipsSection) {
+      membershipsSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+  const handleButtonClickNosotros = () => {
+    const membershipsSection = document.getElementById('seccion3');
+    if (membershipsSection) {
+      membershipsSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+  const handleButtonClickServicios = () => {
+    const membershipsSection = document.getElementById('presentacion');
+    if (membershipsSection) {
+      membershipsSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+  const handleButtonClickContacto = () => {
+    const membershipsSection = document.getElementById('footer');
+    if (membershipsSection) {
+      membershipsSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
 
   return (
     <nav className="bg-[#F8D571] transition-all ease-in-out duration-300">
@@ -27,29 +55,33 @@ function Header({}: Props) {
             </div>
             <div className="hidden md:block transition-all ease-in-out duration-300">
               <div className="ml-4 flex items-center space-x-4">
-                <a href="/"
-                className="text-black hover:bg-[#34B1BF] hover:text-white rounded-lg p-2"
+                <a
+                onClick={handleButtonClickHome}
+                className="text-black hover:bg-[#34B1BF] hover:text-white rounded-lg p-2 cursor-pointer"
                 >
                   Home
 
                 </a>
 
-                <a href="/"
-                className="text-black hover:bg-[#34B1BF] hover:text-white rounded-lg p-2"
+                <a 
+                onClick={handleButtonClickNosotros}
+                className="text-black hover:bg-[#34B1BF] hover:text-white rounded-lg p-2 cursor-pointer"
                 >
                   Nosotros
 
                 </a>
 
-                <a href="/"
-                className="text-black hover:bg-[#34B1BF] hover:text-white rounded-lg p-2"
+                <a 
+                onClick={handleButtonClickServicios}
+                className="text-black hover:bg-[#34B1BF] hover:text-white rounded-lg p-2 cursor-pointer"
                 >
                   Servicios
 
                 </a>
 
-                <a href="/"
-                className="text-black hover:bg-[#34B1BF] hover:text-white rounded-lg p-2"
+                <a 
+                onClick={handleButtonClickContacto}
+                className="text-black hover:bg-[#34B1BF] hover:text-white rounded-lg p-2 cursor-pointer"
                 >
                   Contacto
 
